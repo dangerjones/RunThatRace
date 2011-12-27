@@ -1,0 +1,71 @@
+#hd {
+	background-image: url('/rtrigniter/images/header_background.png');
+	height: 120px;
+	width: 808px;
+	position: relative;
+	left: -40px;
+	padding: 0 0 0 40px;
+}
+
+#hd img {
+	width: 205px;
+	height: 72px;
+}
+
+#wrapper {
+	width: 768px;
+	height: 668px;
+	background-color: #d3d3d3;
+	border-radius: 16px;
+	position: relative;
+	top: -50px;
+	border: 1px solid black;
+}
+
+#tagline {
+	margin: 4px 0 0 0;
+	position: relative;
+	left: -2px;
+}
+
+.bigRedButton {
+	width: 240px;
+	height: 424px;
+	float: left;
+	color: #fff;
+	margin: 8px;
+	border: 0;
+	font-size: 42px;
+	background-color: transparent;
+}
+
+.bigBlackButton {
+	width: 240px;
+	height: 130px;
+	float: left;
+	color: #fff;
+	margin: 8px;
+	border: 0;
+	font-size: 42px;
+	background-image: url('/rtrigniter/images/rtr_black_button_240_130.png');
+	background-color: transparent;
+}
+
+#findRace {
+	background-image: url('/rtrigniter/images/rtr_red_button1_240_424.png');
+}
+#signupRace {
+	background-image: url('/rtrigniter/images/rtr_red_button2_240_424.png');
+}
+#createRace {
+	background-image: url('/rtrigniter/images/rtr_red_button3_240_424.png');
+}
+
+.linkButton {
+	text-decoration: none;
+}
+
+.centerText {
+	text-align: center;
+}
+
