@@ -1,5 +1,5 @@
 <div id="wrapper">
-	<img id="tagline" src="/rtrigniter/images/rtr_tag_line_slant_770_66.png" alt="Managing, Finding, Registering &amp; Running That Race was never so easy!" />
+	<img id="tagline" src="/rtrigniter/images/rtr_tag_line_slant_772_66.png" alt="Managing, Finding, Registering &amp; Running That Race was never so easy!" />
 	<div id="body">
 		<a href="/rtrigniter/search" class="linkButton">
 			<button id="findRace" class="bigRedButton">find that race</button>
