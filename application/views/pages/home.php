@@ -1,9 +1,9 @@
 <div id="wrapper">
-	<img id="tagline" src="/rtrigniter/images/rtr_tag_line_slant_772_66.png" alt="Managing, Finding, Registering &amp; Running That Race was never so easy!">
+	<img id="tagline" src="/rtrigniter/images/rtr_tag_line_slant_white_772_64.png" alt="Managing, Finding, Registering &amp; Running That Race was never so easy!">
 	<div id="body">
-		<button id="findRace" class="bigRedButton">find that race</button>
-		<button id="signupRace" class="bigRedButton">signup for that race</button>
-    <button id="createRace" class="bigRedButton">create that race</button>
+		<div id="findRace" class="bigRedButton">find that race</div>
+		<div id="signupRace" class="bigRedButton">signup for that race</div>
+    <div id="createRace" class="bigRedButton">create that race</div>
 		<div class="clearBoth"></div>
 	</div>
 	<div id="bodyFooter">
