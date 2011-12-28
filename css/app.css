@@ -1,10 +1,60 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* end css reset */
+
 #hd {
 	background-image: url('/rtrigniter/images/header_background.png');
 	height: 120px;
-	width: 808px;
-	position: relative;
-	left: -40px;
-	padding: 0 0 0 40px;
+	width: 848px;
+	padding: 0 0 0 80px;
+	margin: auto;
 }
 
 #hd img {
@@ -14,12 +64,13 @@
 
 #wrapper {
 	width: 768px;
-	height: 668px;
 	background-color: #d3d3d3;
 	border-radius: 16px;
 	position: relative;
 	top: -50px;
 	border: 1px solid black;
+	margin: auto;
+	padding: 0 0 10px 0;
 }
 
 #tagline {
@@ -28,37 +79,35 @@
 	left: -2px;
 }
 
+#body {
+	margin: 20px 0 0 60px;
+}
+
+#bodyFooter {
+	margin: 20px 0 0 60px;
+}
+
 .bigRedButton {
-	width: 240px;
-	height: 424px;
+	width: 200px;
+	height: 353px;
 	float: left;
 	color: #fff;
-	margin: 8px;
+	margin: 0 24px 0 0;
 	border: 0;
-	font-size: 42px;
+	font-size: 40px;
 	background-color: transparent;
 }
 
 .bigBlackButton {
-	width: 240px;
-	height: 130px;
+	width: 200px;
+	height: 108px;
 	float: left;
 	color: #fff;
-	margin: 8px;
+	margin: 0 24px 0 0;
 	border: 0;
-	font-size: 42px;
-	background-image: url('/rtrigniter/images/rtr_black_button_240_130.png');
+	font-size: 40px;
+	background-image: url('/rtrigniter/images/rtr_black_button_200_108.png');
 	background-color: transparent;
-}
-
-#findRace {
-	background-image: url('/rtrigniter/images/rtr_red_button1_240_424.png');
-}
-#signupRace {
-	background-image: url('/rtrigniter/images/rtr_red_button2_240_424.png');
-}
-#createRace {
-	background-image: url('/rtrigniter/images/rtr_red_button3_240_424.png');
 }
 
 .linkButton {
@@ -67,5 +116,21 @@
 
 .centerText {
 	text-align: center;
+}
+
+.clearBoth {
+	clear: both;
+}
+
+#findRace {
+	background-image: url('/rtrigniter/images/rtr_red_button1_200_353.png');
+}
+
+#signupRace {
+	background-image: url('/rtrigniter/images/rtr_red_button2_200_353.png');
+}
+
+#createRace {
+	background-image: url('/rtrigniter/images/rtr_red_button3_200_353.png');
 }
 
