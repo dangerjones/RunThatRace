@@ -1,15 +1,55 @@
 <div id="wrapper">
 	<img id="tagline" src="/rtrigniter/images/rtr_tag_line_slant_white_772_64.png" alt="Managing, Finding, Registering &amp; Running That Race was never so easy!">
 	<div id="body">
-		<div id="findRace" class="bigRedButton">find that race</div>
-		<div id="signupRace" class="bigRedButton">signup for that race</div>
-    <div id="createRace" class="bigRedButton">create that race</div>
+		<div id="browse" class="rtrBackground">
+			<form action="rtrigniter/browse">
+			  <h1>Browse</h1>
+			  <select id="browseState">
+				  <option value="XX">State</option>
+				  <option value="UT">Utah</option>
+					<option value="CA">Other -- Outside US</option>
+				</select>
+				<select id="browseEventType">
+					<option value="XX">Event Type</option>
+					<option value="UT">5K</option>
+					<option value="CA">10K</option>
+					<option value="CA">Half Marathon</option>
+					<option value="CA">Marathon</option>
+				</select>
+				<input type="text" name="browseDate" value="Date" />
+				<input id="browseButton" class="submitButton" type="submit" value="" />
+			</form>
+		</div>
+		<div id="search" class="rtrBackground">
+			<form action="rtrigniter/search">
+			  <h1>Search</h1>
+				<input type="text" name="keywords" value="" />
+
+				<h2>Search by:</h2>
+				<h3>Event Name</li>
+				<h3>Location</h3>
+				<h3>Keyword</h3>
+				<input id="searchButton" class="submitButton" type="submit" value="" />
+			</form>
+		</div>
+    <div id="create" class="rtrBackground">
+			<form action="rtrigniter/direct">
+			  <h1>Direct</h1>
+				<ul>
+					<li>Add Events</li>
+					<li>Manage Registration</li>
+					<li>Contact Registrants</li>
+					<li>Promote Event</li>
+				</ul>
+				<input id="createButton" class="submitButton" type="submit" value="" />
+			</form>
+		</div>
 		<div class="clearBoth"></div>
 	</div>
 	<div id="bodyFooter">
-	  <button class="bigBlackButton">promo 1</button>
-	  <button class="bigBlackButton">promo 2</button>
-	  <button class="bigBlackButton">promo 3</button>
+	  <button class="bigBlackButton">Find Running <span>Groups</span></button>
+	  <button class="bigBlackButton">Find Running <span>Routes</span></button>
+	  <button class="bigBlackButton">Find Running <span>Stores</span></button>
 		<div class="clearBoth"></div>
 	</div>
 	<div class="clearBoth"></div>

@@ -30,6 +30,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	font: 10px arial,sans-serif;
 }
 ol, ul {
 	list-style: none;
@@ -51,15 +52,10 @@ table {
 
 #hd {
 	background-image: url('/rtrigniter/images/header_background.png');
-	height: 120px;
+	height: 150px;
 	width: 848px;
 	padding: 0 0 0 80px;
 	margin: auto;
-}
-
-#hd img {
-	width: 205px;
-	height: 72px;
 }
 
 #wrapper {
@@ -87,16 +83,78 @@ table {
 	margin: 20px 0 0 60px;
 }
 
-.bigRedButton {
+.rtrBackground {
 	width: 200px;
 	height: 353px;
 	float: left;
 	color: #fff;
 	margin: 0 24px 0 0;
 	border: 0;
-	font-size: 40px;
 	background-color: transparent;
+	position: relative;
 }
+
+.rtrBackground h1 {
+	font-size: 30px;
+	margin: 20px;
+	text-align:center;
+}
+
+.rtrBackground h2 {
+	font-size: 20px;
+	margin: 0 0 0 20px;
+}
+
+.rtrBackground h3 {
+	font-size: 20px;
+	margin: 10px 0 0 40px;
+}
+
+.rtrBackground ul {
+	font-size: 20px;
+	margin: 20px 20px;
+	list-style-type: disc;
+}
+
+.rtrBackground li {
+	margin: 10px 20px;
+}
+
+.rtrBackground select {
+	width: 165px;
+	margin: 10px 20px;
+	font-size: 20px;
+}
+
+.rtrBackground input {
+	width: 160px;
+	margin: 10px 20px;
+	font-size: 20px;
+}
+
+.rtrBackground .submitButton {
+	background-color: transparent;
+	border: 0;
+	width: 160px;
+	height: 65px;
+	position: absolute;
+	right: 20px;
+	bottom: 10px;
+	margin: 0;
+}
+
+#browseButton {
+	background-image: url('/rtrigniter/images/rtr_browse_button_160_65.png');
+}
+
+#searchButton {
+	background-image: url('/rtrigniter/images/rtr_search_button_160_65.png');
+}
+
+#createButton {
+	background-image: url('/rtrigniter/images/rtr_create_button_160_66.png');
+}
+
 
 .bigBlackButton {
 	width: 200px;
@@ -105,9 +163,13 @@ table {
 	color: #fff;
 	margin: 0 24px 0 0;
 	border: 0;
-	font-size: 40px;
+	font-size: 20px;
 	background-image: url('/rtrigniter/images/rtr_black_button_200_108.png');
 	background-color: transparent;
+}
+
+.bigBlackButton span {
+	font-size: 30px;
 }
 
 .linkButton {
@@ -122,15 +184,15 @@ table {
 	clear: both;
 }
 
-#findRace {
+#browse {
 	background-image: url('/rtrigniter/images/rtr_red_button1_200_353.png');
 }
 
-#signupRace {
+#search {
 	background-image: url('/rtrigniter/images/rtr_red_button2_200_353.png');
 }
 
-#createRace {
+#create {
 	background-image: url('/rtrigniter/images/rtr_red_button3_200_353.png');
 }
 

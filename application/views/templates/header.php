@@ -8,6 +8,6 @@
 	<body>
   	<div id="hd">
 			<a href="/">
-				<img src="/rtrigniter/images/rtr_header_logo_205_72.png" alt="home">
+				<img src="/rtrigniter/images/rtr_header_logo_300_105.png" alt="home">
 			</a>
 		</div>
