@@ -7,7 +7,9 @@
 	</head>
 	<body>
   	<div id="hd">
-			<a href="/">
-				<img src="/rtrigniter/images/rtr_header_logo_300_105.png" alt="home">
-			</a>
+			<p>
+				<a href="/">
+					<img src="/rtrigniter/images/rtr_header_logo_300_105.png" alt="home">
+				</a>
+			</p>
 		</div>

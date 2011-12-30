@@ -52,9 +52,12 @@ table {
 
 #hd {
 	background-image: url('/rtrigniter/images/header_background.png');
-	height: 140px;
-	width: 848px;
-	padding: 0 0 0 80px;
+	height: 150px;
+	margin: auto;
+}
+
+#hd p {
+	width: 768px;
 	margin: auto;
 }
 
@@ -76,11 +79,11 @@ table {
 }
 
 #body {
-	margin: 16px 0 0 60px;
+	margin: 20px 0 0 60px;
 }
 
 #bodyFooter {
-	margin: 16px 0 0 60px;
+	margin: 20px 0 0 60px;
 }
 
 .rtrBackground {
