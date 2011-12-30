@@ -34,7 +34,7 @@
 		</div>
     <div id="create" class="rtrBackground">
 			<form action="rtrigniter/direct">
-			  <h1>Direct</h1>
+			  <h1>Create</h1>
 				<ul>
 					<li>Add Events</li>
 					<li>Manage Registration</li>
