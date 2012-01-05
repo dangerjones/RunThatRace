@@ -13,3 +13,6 @@
 				</a>
 			</p>
 		</div>
+		<div id="wrapper">
+			<img id="tagline" src="/rtrigniter/images/rtr_tag_line_slant_white_772_64.png" alt="Managing, Finding, Registering &amp; Running That Race was never so easy!">
+

@@ -49,9 +49,12 @@ $active_group = 'default';
 $active_record = TRUE;
 
 $db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'CI_tutorial';
-$db['default']['password'] = 'hello';
-$db['default']['database'] = 'CI_tutorial';
+//$db['default']['username'] = 'CI_tutorial';
+//$db['default']['password'] = 'hello';
+//$db['default']['database'] = 'CI_tutorial';
+$db['default']['username'] = 'runner';
+$db['default']['password'] = 'futasbolt1';
+$db['default']['database'] = 'runthatrace';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;

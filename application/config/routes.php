@@ -40,9 +40,12 @@
 
 $route['default_controller'] = 'pages/view';
 
-$route['news/create'] = 'news/create';
-$route['news/(:any)'] = 'news/view/$1';
-$route['news'] = 'news';
+//$route['news/create'] = 'news/create';
+//$route['news/(:any)'] = 'news/view/$1';
+//$route['news'] = 'news';
+
+$route['races/view/(:any)'] = 'races/view/$1';
+$route['races'] = 'races';
 
 
 $route['404_override'] = '';
