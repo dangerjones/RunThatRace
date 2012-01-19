@@ -1,20 +1,31 @@
 <div id="body">
 	<div id="browse" class="rtrBackground">
-		<form action="/rtrigniter/races" method="POST">
+		<form action="/rtrigniter/races/search" method="POST">
 		  <h1>Browse</h1>
-		  <select id="browseState">
-			  <option value="XX">State</option>
+		  <select id="searchState" name="searchState">
+			  <option value="">State</option>
 			  <option value="UT">Utah</option>
 				<option value="CA">Other -- Outside US</option>
 			</select>
-			<select id="browseEventType">
-				<option value="XX">Event Type</option>
-				<option value="UT">5K</option>
-				<option value="CA">10K</option>
-				<option value="CA">Half Marathon</option>
-				<option value="CA">Marathon</option>
+			<select id="searchEventType" name="searchEventType">
+				<option value="">Event Type</option>
+				<option value="5K">5K</option>
+				<option value="10K">10K</option>
+				<option value="HalfMarathon">Half Marathon</option>
+				<option value="Marathon">Marathon</option>
 			</select>
-			<input type="text" name="browseDate" value="Date" />
+			<select id="searchMonth" name="searchMonth">
+				<option value="">Month</option>
+				<?php
+					$date_value = date('Ym');
+					$date_text = date('Ym');
+					for ($i = 0; $i < 12; $i++) {
+						$date_value = date('Ym', strtotime('+' . $i . 'month'));
+						$date_text = date('M Y', strtotime('+' . $i . 'month'));
+						echo "<option value='$date_value'>$date_text</option>";
+					}
+				?>
+			</select>
 			<input id="browseButton" class="submitButton" type="submit" value="" />
 		</form>
 	</div>

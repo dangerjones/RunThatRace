@@ -172,6 +172,10 @@ table {
 }
 
 .bigBlackButton span {
+	display: block;
+}
+
+.bigBlackButton span {
 	font-size: 30px;
 }
 
