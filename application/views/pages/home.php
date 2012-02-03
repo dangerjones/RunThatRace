@@ -30,9 +30,9 @@
 		</form>
 	</div>
 	<div id="search" class="rtrBackground">
-		<form action="/rtrigniter/races" method="POST">
+		<form action="/rtrigniter/races/search" method="POST">
 		  <h1>Search</h1>
-			<input type="text" name="keywords" value="" />
+			<input type="text" name="searchName" value="" />
 
 			<h2>Search by:</h2>
 			<h3>Event Name</li>

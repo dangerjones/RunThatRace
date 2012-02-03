@@ -7,6 +7,8 @@ class Races_model extends CI_Model {
 	}
 
 	public function get_races($searchName = FALSE, $searchMonth = FALSE, $searchState = FALSE, $searchEventType = FALSE) {
+		$this->db->order_by('day', 'asc');
+
 		if ($searchName === FALSE && $searchMonth === FALSE && $searchState === FALSE && $searchEventType === FALSE) {
 			$query = $this->db->get('races');
 
@@ -14,7 +16,7 @@ class Races_model extends CI_Model {
 		}
 		
 		if ($searchName !== FALSE) {
-			$this->db->like('name', $searchName);
+			$this->db->like('titleLowerCase', $searchName);
 			$query = $this->db->get('races');
 
 			return $query->result_array();
