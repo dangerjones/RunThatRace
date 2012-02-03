@@ -4,25 +4,37 @@ class Register_model extends CI_Model {
 	var $race = null;
 	var $contact = null;
 	var $participants = null;
+	var $session_keys = null;
 
 	public function __construct() {
+		$session_keys = array(
+			'race' => get_class($this) . '/race',
+			'contact' => get_class($this) . '/contact',
+			'participants' => get_class($this) . '/participants',
+		);
+
+		$this->session_keys = $session_keys;
+
+		$this->load->library('session');
+
+		$this->get_session();
 	}
 
 	function get_session() {
 		$sessionKey = get_class($this);
 		
-		foreach ($this as $key => $value) {
-			$this->$key = $this->CI->session->userdata($sessionKey . '$' . $key);
+		foreach ($this->session_keys as $key => $value) {
+			$this->$key = $this->session->userdata($value);
 		}
 	}
 
 	function set_session() {
 		$sessionKey = get_class($this);
 
-		foreach ($this as $key => $value) {
-			$this->CI->session->set_userdata(
-				$sessionKey . '$' . $key,
-				$value
+		foreach ($this->session_keys as $key => $value) {
+			$this->session->set_userdata(
+				$value,
+				$this->$key
 			);
 		}
 	}
@@ -53,6 +65,14 @@ class Register_model extends CI_Model {
 
 	public function set_race($r) {
 		$this->race = $r;
+
+		$this->set_session();
+	}
+
+	public function set_race_by_link($race_link = FALSE) {
+		$this->load->model('races_model');
+		
+		$this->race = $this->races_model->get_race_by_link($race_link);
 
 		$this->set_session();
 	}

@@ -47,6 +47,10 @@ $route['default_controller'] = 'pages/view';
 $route['races/view/(:any)'] = 'races/view/$1';
 $route['races'] = 'races';
 
+$route['register/number_participants'] = 'register/number_participants';
+$route['register/contact'] = 'register/contact';
+$route['register/participants'] = 'register/participants';
+$route['register/(:any)'] = 'register/index/$1';
 
 $route['404_override'] = '';
 
