@@ -4,6 +4,5 @@
 	  Race: <?php echo $register_model->race['title'] ?>
 	</p>
 	<xmp>
-		<?php var_dump($register_model); ?>
 	</xmp>
 </div>

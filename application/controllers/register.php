@@ -27,6 +27,7 @@ class Register extends CI_Controller {
 					"type" => "adult",
  					"firstname" => "",
 					"lastname" => "",
+					"email" => "",
 					"birthdate" => "");
 
 				$participants[] = $p;
@@ -39,6 +40,7 @@ class Register extends CI_Controller {
 					"type" => "child",
  					"firstname" => "",
 					"lastname" => "",
+					"email" => "",
 					"birthdate" => "");
 
 				$participants[] = $p;
@@ -49,7 +51,7 @@ class Register extends CI_Controller {
 
 		$this->load->helper('url');
 		
-		redirect('/register/contact');
+		redirect('/register/participants');
 	}
 
 	public function contact() {
