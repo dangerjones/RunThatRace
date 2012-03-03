@@ -5,11 +5,12 @@
 	</xmp> -->
 	<?php if (count($races) > 0) { ?>
 		<div class="raceSummary">
-			<h1><?php echo $races['title'] ?></h1>
+			<h1><?= $races['title'] ?></h1>
+			<h2><?= formatted_race_date($races) ?></h2>
 			<p>
-				<?php echo $races['text'] ?>
+				<?= $races['text'] ?>
 			</p>
-			<a href="/rtrigniter/register/<?php echo $races['link'] ?>">Register</a>
+			<a href="/rtrigniter/register/<?= $races['link'] ?>">Register</a>
 		</div>
 	<?php } else { ?>
 		<h1>Error</h1>
