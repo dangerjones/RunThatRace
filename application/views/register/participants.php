@@ -5,6 +5,7 @@
 	</p>
 	<h2>Participant Information</h2>
 	<? $number_participants = count($register_model->participants); ?>
+	<form method="POST">
 	<? for ($i = 0; $i < $number_participants; $i++) { ?>
 		<? $p = $register_model->participants[$i]; ?>
 		<div class="participant">
@@ -83,4 +84,7 @@
 			
 		</div>
 	<? } ?>
+
+	<input type="submit" value="submit" />
+	</form>
 </div>

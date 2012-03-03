@@ -63,6 +63,24 @@ class Register extends CI_Controller {
 	}
 
 	public function participants() {
+		if ($this->input->is_post()) {
+			$participants = $this->register_model->get_participants();
+			$len = count($participants);
+			for ($i = 0; $i < $len; $i++) {
+				$p = $participants[$i];
+			  foreach ($p as $key => $value) {
+					$k = $key . "_" . $i;
+					$v = $this->input->post($k);
+					if ($v) {
+						$p[$key] = $v;
+					}
+				}	
+				$participants[$i] = $p;
+			}
+
+			$this->register_model->set_participants($participants);
+		}
+
 		$data['register_model'] = $this->register_model;
 
 		$this->load->view('templates/header', $data);
