@@ -203,3 +203,15 @@ table {
 	background-image: url('/rtrigniter/images/rtr_red_button3_200_353.png');
 }
 
+.participant {
+	border: black 1px solid;
+	border-radius: 15px;
+	padding: 10px;
+	margin: 10px;
+}
+
+.participant legend {
+	padding: 5px;
+	font-size: 24px;
+}
+
